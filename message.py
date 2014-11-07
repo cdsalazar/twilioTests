@@ -19,5 +19,13 @@ def returner():
 	for m in messages: 
 		if (m.direction == 'inbound'):
 			return m.body
+def parser(input):
+	mod_input = input.split()
+	if (mod_input[0] == "hello" and mod_input[1] == "world"):
+		return "we cool"
+
+	else:
+		return "we not cool"
+
 
 print(returner())
